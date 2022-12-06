@@ -7,26 +7,26 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Course Title</label>
-                    <input type="text" class="form-control">
+                    <input name="coursetitle" [(ngModel)]="coursetitle" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Course Description</label>
-                    <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label">Course Venue</label>
-                    <input type="text" class="form-control">
+                    <input name="coursedescription" [(ngModel)]="coursedescription" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Course Duration</label>
-                    <input type="text" class="form-control">
+                    <input name="courseduration" [(ngModel)]="courseduration" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Course Date</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input name="coursedate" [(ngModel)]="coursedate" type="date" name="" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Course Venue</label>
+                    <input name="coursevenue" [(ngModel)]="coursevenue" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-primary">Add Course</button>
+                    <button (click)="readValue()" class="btn btn-success">Add Course</button>
                 </div>
             </div>
         </div>
