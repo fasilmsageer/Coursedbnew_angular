@@ -12,7 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute=[
   {
-    path:"addcourse",
+    path:"",
     component:AddCourseComponent
   },
   {
