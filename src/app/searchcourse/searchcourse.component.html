@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <h2>Enter Course Details</h2>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Course Title</label>
+                    <input name="coursetitle" [(ngModel)]="coursetitle" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()" class="btn btn-primary">Search Course</button>
+                </div>
+            </div>
+            <div class="row g-3 mt-4" *ngFor="let j of searchdata">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Course Title</label>
+                    <input type="text" class="form-control" value="{{j.coursetitle}}">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Course Description</label>
+                    <input type="text" class="form-control" value="{{j.coursedescription}}">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Course Venue</label>
+                    <input type="text" class="form-control" value="{{j.coursevenue}}">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">COurse Duration</label>
+                    <input type="text" class="form-control" value="{{j.courseduration}}">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Course Date</label>
+                    <input type="text" class="form-control" value="{{j.coursedate}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
